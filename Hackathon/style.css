@@ -1,0 +1,71 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.hackathon-ul{
+    margin: 0;
+    height: 64px;
+    list-style-type: none;
+    background-color: crimson;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: auto;
+}
+
+.hackathon-ul .hackathon-li{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: solid white 2px;
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hackathon-ul .hackathon-li:nth-child(-n + 2){
+    margin-right: 32px;
+}
+
+.hackathon-ul .hackathon-li:nth-child(3){
+    margin-right: 16px;
+}
+
+.hackathon-i{
+    font-size: 16px;
+}
+
+.hackathon-li .hackathon-i:last-child{
+    color: white;
+    background-color: crimson;
+}
+
+.hackathon-li:hover .hackathon-i, .hackathon-li:hover{
+    color: crimson;
+    background-color: white;
+}
+
+.hackathon-a{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 386px){
+    .hackathon-ul{
+        background-color: blue;
+    }
+    .hackathon-li .hackathon-i:last-child{
+        background-color: blue;
+    }
+    .hackathon-li:hover .hackathon-i, .hackathon-li:hover{
+        color: blue;
+        background-color: white;
+    }
+}
